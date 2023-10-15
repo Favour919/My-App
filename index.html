@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--*******************
+        Preloader start
+    ********************-->
+    <!-- <div id="preloader">
+        <div class="waviy">
+		   <span style="--i:1">L</span>
+		   <span style="--i:2">o</span>
+		   <span style="--i:3">a</span>
+		   <span style="--i:4">d</span>
+		   <span style="--i:5">i</span>
+		   <span style="--i:6">n</span>
+		   <span style="--i:7">g</span>
+		   <span style="--i:8">.</span>
+		   <span style="--i:9">.</span>
+		   <span style="--i:10">.</span>
+		</div>
+    </div> -->
+    <!--*******************
+        Preloader end
+    ********************-->
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="container">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="side-bar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-clinic-medical"></i>
+                        <div class="title">N</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-stethoscope"></i>
+                        <div class="title">Symtoms</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-md"></i>
+                        <div class="title">Doctor</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div class="title">Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div class="title">Help</div>
+                    </a>
+                </li>
+            </ul>
+            
+        </div> 
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="search here">
+                    <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+                <i class="fas fa-bell"></i>
+                <div class="user-wrapper">
+                    <div class="user">
+                        <img src="img/avatar.svg" alt="">
+                    </div>
+                    <div class="user-details">
+                        <p class="name">AC</p>
+                        <p>xyz@gmail.com</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!--**********************************
+            Header End
+        ***********************************-->
+            <div class="cards">
+                <div class="card" id="card1">
+                    <div class="card-content">
+                        <div class="name">Hello Ac!</div>
+                        <div class="card-name">How are you doing today?</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                <div class="card-content">
+                    <div class="">
+                        
+                    </div>
+                    <div class="card-name">How are you doing today</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fa fa-phone"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-content">
+                    <div class="doctor-card">
+                        <p>Your Doctor</p>
+                        <div class="icon-box">
+                        <i class="fa fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                    <div class="doctor-name">
+                        <div class="user">
+                            <img src="img/avatar.svg" alt="">
+                        </div>
+                        <div class="user-details">
+                            <p class="name">AC</p>
+                            <p>xyz@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card" id="card4">
+                <div class="card-content">
+                    <div class="data-content">
+                        <p>Your Data</p>
+                        <div class="data-box">
+                            <i class="fas fa-pen"></i>
+                            <p>change</p>
+                        </div>
+                    </div>
+                    <div class="data-details">
+                        <div class="user-details">
+                            <p class="name">Height</p>
+                            <p>3.07m</p>
+                        </div>
+                        <div class="user-details">
+                            <p class="name">Weight</p>
+                            <p>123kg</p>
+                        </div>
+                        <div class="user-details">
+                            <p class="name">Blood</p>
+                            <p>A+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-content">
+                    <div class="data-content">
+                        <p>Accessment Trend</p>
+                        <div class="data-box">
+                            <i class="fas fa-pen"></i>
+                            <p>17% higher than last month</p>
+                        </div>
+                      </div>  
+                    <div class="chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        
+        </div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
