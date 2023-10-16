@@ -4,16 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
-@import url("../icons/simple-line-icons/css/simple-line-icons.css");
-@import url("../icons/font-awesome/css/all.min.css");
-@import url("../icons/material-design-iconic-font/css/materialdesignicons.min.css");
-@import url("../icons/themify-icons/css/themify-icons.css");
-@import url("../icons/line-awesome/css/line-awesome.min.css");
-@import url("../icons/avasta/css/style.css");
-@import url("../icons/flaticon/flaticon.css");
-@import url("../icons/flaticon_1/flaticon_1.css");
-@import url("../icons/icomoon/icomoon.css");
-@import url("../icons/bootstrap-icons/font/bootstrap-icons.css");
+
   
 * {
   box-sizing: border-box;
@@ -166,6 +157,7 @@ img{
 }
 #card1{
   background: none;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -212,6 +204,63 @@ img{
   justify-content: space-between;
   gap: 10px;
   margin-top: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.symptom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+@media (max-width:1090px) {
+  .side-bar{
+    width: 60px;
+  }
+  .main{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .top-bar{
+    width: calc(100% - 60px);
+  }
+}
+@media (max-width:860px){
+    .cards{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+        "card1 card1"
+        "card3 card4"
+        "card2 card2"
+        "card5 card5"
+      ;
+    }
+}
+@media (max-width:600px){
+    .cards{
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "card1"
+        "card3"
+        "card4"
+        "card2"
+        "card5"
+      ;
+    }
+    .chart-box{
+      display: none;
+    }
 }
 #preloader {
   position: fixed;

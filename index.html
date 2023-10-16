@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -52,9 +53,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="symptom.html">
                         <i class="fas fa-stethoscope"></i>
-                        <div class="title">Symtoms</div>
+                        <div class="title">Symtoms </div>
                     </a>
                 </li>
                 <li>
@@ -117,17 +118,22 @@
                     </div>
                 </div>
                 <div class="card" id="card2">
-                <div class="card-content">
-                    <div class="">
-                        
+                    <div class="symptom">
+                        <div class="">
+                            <span class="material-symbols-outlined">
+                                arrow_or_edge
+                            </span>
+                        </div>
+                        <div class="card-name">
+                            <p>symptom</p>
+                            <p>List of symptoms</p>
+                        </div>
+                        <div class="icon-box">
+                            <a href="symptom.html"><i class="fa fa-plus"></i></a>
+                        </div>
                     </div>
-                    <div class="card-name">How are you doing today</div>
+                
                 </div>
-                <div class="icon-box">
-                    <i class="fa fa-phone"></i>
-                    <i class="fas fa-envelope"></i>
-                </div>
-            </div>
             <div class="card" id="card3">
                 <div class="card-content">
                     <div class="doctor-card">
@@ -178,12 +184,12 @@
                 <div class="card-content">
                     <div class="data-content">
                         <p>Accessment Trend</p>
-                        <div class="data-box">
+                        <div class="chart-box">
                             <i class="fas fa-pen"></i>
                             <p>17% higher than last month</p>
                         </div>
                       </div>  
-                    <div class="chart">
+                    <div class="chart chart-container" style="position: relative; height:40vh; width:80vw">
                         <canvas id="myChart"></canvas>
                     </div>
                     
