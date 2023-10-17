@@ -13,9 +13,10 @@ const ctx = document.getElementById('myChart');
     },
     options: {
       responsive: true,
+      
       scales: {
         y: {
-          beginAtZero: true
+          beginAtZero: true,
         }
       }
     }

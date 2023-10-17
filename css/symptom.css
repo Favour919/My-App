@@ -64,7 +64,7 @@ body {
   font-size: 20px;
 
 }
-#main{
+.main{
   position: absolute;
   width: calc(100% - 250px);
   min-height: 100vh;
@@ -131,99 +131,11 @@ img{
   margin-top: 60px;
   width: 100%;
   padding: 35px 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  grid-template-areas: 
-    "card1 card1  card2"
-    "card3 card4 card2 "
-    "card5 card5 card2 "
-  ;
-}
-#card1{
-  grid-area: card1;
-}
-#card2{
-  grid-area:card2;
-}
-#card3{
-  grid-area: card3;
-}
-#card4{
-  grid-area: card4;
-}
-#card5{
-  grid-area: card5;
-}
-#card1{
-  background: none;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#card1 .icon-box{
-  display: flex;
-  gap: 10px;
-}
-#card1 .icon-box i{
-  background: rgba(98, 160, 241, 0.658);
-  padding: 10px;
   
 }
-#card2,#card3,#card4,#card5{
-  background: #fff;
-  width: 100%;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.doctor-card{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.doctor-name{
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.data-content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.data-box{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.data-details{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 20px;
-}
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-.symptom{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  background: #fff;
-  width: 100%;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-}
+
 @media (max-width:1090px) {
   .side-bar{
     width: 60px;
@@ -236,32 +148,7 @@ img{
     width: calc(100% - 60px);
   }
 }
-@media (max-width:860px){
-    .cards{
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: 
-        "card1 card1"
-        "card3 card4"
-        "card2 card2"
-        "card5 card5"
-      ;
-    }
-}
-@media (max-width:600px){
-    .cards{
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-        "card1"
-        "card3"
-        "card4"
-        "card2"
-        "card5"
-      ;
-    }
-    .chart-box{
-      display: none;
-    }
-}
+
 
 #preloader {
   position: fixed;

@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/symptom.css">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body id="body">
     <!--*******************
         Preloader start
     ********************-->
@@ -38,71 +40,11 @@
         <!--**********************************
             Nav header start
         ***********************************-->
-        <div class="side-bar">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-clinic-medical"></i>
-                        <div class="title">N</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-th-large"></i>
-                        <div class="title">Dashboard</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="symptom.html">
-                        <i class="fas fa-stethoscope"></i>
-                        <div class="title">Symtoms </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-user-md"></i>
-                        <div class="title">Doctor</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-cog"></i>
-                        <div class="title">Settings</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                        <div class="title">Help</div>
-                    </a>
-                </li>
-            </ul>
-            
-        </div> 
-        <!--**********************************
-            Nav header end
-        ***********************************-->
-        <!--**********************************
+         <!--**********************************
             Header start
         ***********************************-->
-        <div class="main">
-            <div class="top-bar">
-                <div class="search">
-                    <input type="text" name="search" placeholder="search here">
-                    <label for="search"><i class="fas fa-search"></i></label>
-                </div>
-                <i class="fas fa-bell"></i>
-                <div class="user-wrapper">
-                    <div class="user">
-                        <img src="img/avatar.svg" alt="">
-                    </div>
-                    <div class="user-details">
-                        <p class="name">AC</p>
-                        <p>xyz@gmail.com</p>
-                    </div>
-                </div>
-                
-            </div>
+        <div id="main" class="main">
+            
             <!--**********************************
             Header End
         ***********************************-->
@@ -128,6 +70,7 @@
                             <p>symptom</p>
                             <p>List of symptoms</p>
                         </div>
+                        
                         <div class="icon-box">
                             <a href="symptom.html"><i class="fa fa-plus"></i></a>
                         </div>
@@ -139,10 +82,10 @@
                     <div class="doctor-card">
                         <p>Your Doctor</p>
                         <div class="icon-box">
-                        <i class="fa fa-phone"></i>
-                        <i class="fas fa-envelope"></i>
+                            <i class="fa fa-phone"></i>
+                            <i class="fas fa-envelope"></i>
+                        </div>
                     </div>
-                </div>
                     <div class="doctor-name">
                         <div class="user">
                             <img src="img/avatar.svg" alt="">
@@ -189,7 +132,7 @@
                             <p>17% higher than last month</p>
                         </div>
                       </div>  
-                    <div class="chart chart-container" style="position: relative; height:40vh; width:80vw">
+                    <div class="chart chart-container"  style=" width:100%">
                         <canvas id="myChart"></canvas>
                     </div>
                     
@@ -199,6 +142,8 @@
         
         </div>
     </div>    
+    <script src="js/sidebar.js"></script>
+    <script src="js/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/chart.js"></script>
 </body>
