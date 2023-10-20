@@ -8,7 +8,9 @@ const ctx = document.getElementById('myChart');
       datasets: [{
         label: '# of Votes',
         data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
+        borderWidth: 1,
+        borderColor: '#38d39f',
+        backgroundColor: '#38d39f',
       }]
     },
     options: {

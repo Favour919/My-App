@@ -8,33 +8,51 @@ let nav = `
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <i class="fas fa-th-large"></i>
+                    <a href="index.html">
+                        <span class="material-symbols-outlined">
+                            dashboard
+                        </span>
                         <div class="title">Dashboard</div>
                     </a>
                 </li>
                 <li>
-                    <a href="symptom.html">
-                        <i class="fas fa-stethoscope"></i>
-                        <div class="title">Symtoms </div>
-                    </a>
-                </li>
-                <li>
                     <a href="profile.html">
-                        <i class="fas fa-user-md"></i>
+                        <span class="material-symbols-outlined">
+                            person_outline
+                        </span>
                         <div class="title">Profile</div>
                     </a>
                 </li>
                 <li>
+                    <a href="symptom.html">
+                        <span class="material-symbols-outlined">
+                            stethoscope
+                        </span>
+                        <div class="title">Symtoms </div>
+                    </a>
+                </li>
+                <li>
                     <a href="#">
-                        <i class="fas fa-cog"></i>
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
                         <div class="title">Settings</div>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-question"></i>
+                        <span class="material-symbols-outlined">
+                            contact_support
+                        </span>
                         <div class="title">Help</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <div class="title">logout</div>
                     </a>
                 </li>
             </ul>
