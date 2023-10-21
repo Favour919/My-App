@@ -75,7 +75,7 @@ form.addEventListener('submit', async event => {
         alert.classList.remove('success')
       }, 3000);
 
-     window.location.href = 'index.html';
+     window.location.href = 'dashboard.html';
     }
   } catch (err) {
     console.log(err);

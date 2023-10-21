@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/first-page.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="myFunction()">
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="waviy">
+		   <span style="--i:1">L</span>
+		   <span style="--i:2">o</span>
+		   <span style="--i:3">a</span>
+		   <span style="--i:4">d</span>
+		   <span style="--i:5">i</span>
+		   <span style="--i:6">n</span>
+		   <span style="--i:7">g</span>
+		   <span style="--i:8">.</span>
+		   <span style="--i:9">.</span>
+		   <span style="--i:10">.</span>
+		</div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+    <div id="myDiv">
+        <img class="wave" src="img/wave.png">
+        <div class="container">
+            <div class="img">
+                <img src="img/bg.svg">
+            </div>
+            <div class="login-content">
+                <h3>Taking control of your <span>health</span> has never been <span>easier</span>.</h3>
+                <div>
+                    <a href="registration.html" class="lets-go">Get Started</a>
+                    <a href="login.html" class="login">Login &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+        document.getElementById("preloader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+</body>
+</html>
