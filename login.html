@@ -8,13 +8,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<div class="alert-con">
+		<div class="alert"></div>
+	</div>
 	<img class="wave" src="img/wave.png">
 	<div class="container">
 		<div class="img">
 			<img src="img/bg.svg">
 		</div>
 		<div class="login-content">
-			<form action="index.html">
+			<form id="Form" action="">
 				<img src="img/avatar.svg">
 				<h2 class="title">Welcome</h2>
            		<div class="input-div one">
@@ -23,7 +26,7 @@
            		   </div>
            		   <div class="div">
            		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
+           		   		<input type="text" class="input" id="username" name="username">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -32,7 +35,7 @@
            		   </div>
            		   <div class="div">
            		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
+           		    	<input type="password" id="password" class="input" name="password">
             	   </div>
             	</div>
             	<a class="forgot-pwd" href="#">Forgot Password?</a>

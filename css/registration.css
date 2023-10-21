@@ -224,3 +224,33 @@ form{
 		justify-content: center;
 	}
 }
+
+.alert-con {
+	position: absolute;
+	top: 0;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.alert {
+    font-size: 14px;
+    padding: 10px 20px;
+	width: max-content;
+	margin: auto;
+	border-radius: 4px;
+	display: none;
+  }
+
+  .error {
+    background-color: #f8d3d3;
+    border: 1px solid #990202;
+    color: #990202;
+	display: block;
+  }
+
+  .success {
+	background-color: #dcf3dc;
+	border: 1px solid green;
+	color: green;
+	display: block;
+  }

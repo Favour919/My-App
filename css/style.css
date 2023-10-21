@@ -156,8 +156,9 @@ img{
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-template-areas: 
-    "card1 card1  card2"
+    "card1 card1  card1"
     "card3 card4 card2 "
+    "card6 card6 card2 "
     "card5 card5 card2 "
   ;
 }
@@ -176,6 +177,9 @@ img{
 #card5{
   grid-area: card5;
 }
+#card6{
+  grid-area: card6;
+}
 #card1{
   background: none;
   width: 100%;
@@ -192,7 +196,7 @@ img{
   padding: 10px;
   
 }
-#card3,#card4,#card5{
+#card3,#card4,#card5,#card6{
   background: #fff;
   width: 100%;
   padding: 20px;
@@ -205,6 +209,36 @@ img{
   
   background: none;
   box-shadow: none;
+}
+.recent-orders{
+    margin-top: 1.3rem;
+}
+.recent-orders table{
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.recent-orders table:hover{
+    box-shadow: none;
+}
+
+table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+table tbody tr:last-child td{
+    border: none;
+}
+.recent-orders a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: #38d39f;
 }
 .doctor-card{
   display: flex;
@@ -278,6 +312,7 @@ img{
         "card1 card1"
         "card3 card4"
         "card2 card2"
+        "card6 card6"
         "card5 card5"
       ;
     }
@@ -290,6 +325,7 @@ img{
         "card3"
         "card4"
         "card2"
+        "card6"
         "card5"
       ;
     }
