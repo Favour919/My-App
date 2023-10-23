@@ -8,7 +8,7 @@ let nav = `
                     </a>
                 </li>
                 <li>
-                    <a href="index.html">
+                    <a href="dashboard.html">
                         <span class="material-symbols-outlined">
                             dashboard
                         </span>
