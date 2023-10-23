@@ -266,7 +266,7 @@ form{
 
   .error {
     background-color: #f8d3d3;
-    border: 1px solid #990202;
+    border-bottom: 2px solid #990202;
     color: #990202;
 	display: block;
   }

@@ -1,4 +1,25 @@
 const form = document.getElementById('Form');
+const inputs = document.querySelectorAll(".input");
+
+
+function addcl(){
+	let parent = this.parentNode.parentNode;
+	parent.classList.add("focus");
+}
+
+function remcl(){
+	let parent = this.parentNode.parentNode;
+	if(this.value == ""){
+    parent.classList.remove("focus");
+    parent.classList.add("error");
+	}
+}
+
+
+inputs.forEach(input => {
+	input.addEventListener("focus", addcl);
+	input.addEventListener( remcl);
+});
 
 form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -8,11 +29,12 @@ form.addEventListener('submit', async event => {
 
   for (const pair of data.entries()) {
     let item = document.getElementById(`${pair[0]}`);
+    let parent = item.parentNode.parentNode;
     if (pair[1] == '') {
-      item.style.backgroundColor = "#f0a3a3";
+      parent.classList.add("error");
       return
     } else {
-      item.style.backgroundColor = "transparent";
+      parent.classList.remove("error");
     }
   }
 
@@ -78,23 +100,3 @@ function matchPassword() {
   confirmPassword.style.backgroundColor = "#f0a3a3";
   return false;
 }
-const inputs = document.querySelectorAll(".input");
-
-
-function addcl(){
-	let parent = this.parentNode.parentNode;
-	parent.classList.add("focus");
-}
-
-function remcl(){
-	let parent = this.parentNode.parentNode;
-	if(this.value == ""){
-		parent.classList.remove("focus");
-	}
-}
-
-
-inputs.forEach(input => {
-	input.addEventListener("focus", addcl);
-	input.addEventListener("blur", remcl);
-});

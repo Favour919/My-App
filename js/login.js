@@ -29,11 +29,12 @@ form.addEventListener('submit', async event => {
 
   for (const pair of data.entries()) {
     let item = document.getElementById(`${pair[0]}`);
+    let parent = item.parentNode.parentNode;
     if (pair[1] == '') {
-      item.style.backgroundColor = "#f0a3a3";
+      parent.classList.add("error");
       return
     } else {
-      item.style.backgroundColor = "transparent";
+      parent.classList.remove("error");
     }
   }
   let payload = {
@@ -74,8 +75,11 @@ form.addEventListener('submit', async event => {
       window.setTimeout(() => {
         alert.classList.remove('success')
       }, 3000);
-
-     window.location.href = 'dashboard.html';
+      let token = resData.token;
+      localStorage.setItem('token', token)
+      
+      window.location.href = 'dashboard.html';
+      
     }
   } catch (err) {
     console.log(err);
