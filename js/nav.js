@@ -24,7 +24,7 @@ let nav = `
                     </a>
                 </li>
                 <li>
-                    <a href="symptom.html">
+                    <a href="add-symptom.html">
                         <span class="material-symbols-outlined">
                             stethoscope
                         </span>

@@ -18,7 +18,7 @@ function remcl(){
 
 inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
-	input.addEventListener( remcl);
+	input.addEventListener("blur", remcl);
 });
 
 form.addEventListener('submit', async event => {
@@ -65,7 +65,6 @@ form.addEventListener('submit', async event => {
 
     const resData = await res.json();
 
-    console.log(resData);
     let alert = document.querySelector('.alert');
     if (resData.error) {
       alert.textContent = resData.error;
