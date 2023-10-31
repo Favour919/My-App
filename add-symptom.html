@@ -6,9 +6,7 @@
     <title>Document</title>
     <link href="css/symptom.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -67,8 +65,13 @@
                     <div class="col-lg-8 offset-lg-2">
                         <form>
                             <div class="form-group">
-                                <label>Symtom Name</label>
-                                <input class="form-control" type="search">
+                                <div>
+                                    <label>Symtom Name</label>
+                                    <input class="form-control" id="input-box" type="search" placeholder="Please search for symtoms" autocomplete="off">
+                                </div>
+                                <div class="result-box">
+                                    
+                                </div>
                             </div>
                             
                             <div class="col-sm-6">
@@ -110,6 +113,5 @@
     <script src="js/sidebar.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/symptom.js"></script>
 </body>
 </html>
