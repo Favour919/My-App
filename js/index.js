@@ -21,7 +21,7 @@ let token = localStorage.getItem("token");
 fetch('https://redemptionfm.com/outpatient/get_symptoms', {
 		method: 'GET',
 		headers: {
-			'Authorization': `Bearer ${token}`,
+			'API-Key': `${token}`,
 		},
 	}).then(response => response.json())
 	.then(response => console.log(response))
