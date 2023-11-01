@@ -194,6 +194,7 @@ img{
 #card1 .icon-box i{
   background: #38d39f;
   padding: 10px;
+  color: #f5f5f5;
   
 }
 #card3,#card4,#card5,#card6{
@@ -206,12 +207,17 @@ img{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
   background: none;
   box-shadow: none;
 }
 .recent-orders{
     margin-top: 1.3rem;
+    font-size: 13px;
+}
+
+.recent-orders h2{
+  font-size: 17px;
+  font-weight: 300;
 }
 .recent-orders table{
     background-color: white;
@@ -221,6 +227,9 @@ img{
     box-shadow: var(--box-shadow);
 }
 
+.recent-orders table th{
+  color: rgb(70, 70, 70);
+}
 .recent-orders table:hover{
     box-shadow: none;
 }
@@ -228,7 +237,7 @@ img{
 table tbody td{
     height: 2.8rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    color: black;
+    color: rgb(63, 62, 62);
 }
 
 table tbody tr:last-child td{
