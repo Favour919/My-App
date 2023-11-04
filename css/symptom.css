@@ -171,20 +171,20 @@ img{
   }
 }
 
-.result-box ul{
+.result-box ul, .descr ul{
   border-top: 1px solid #999;
   padding: 15px 10px;
 }
-.result-box ul li{
+.result-box ul li, .descr ul li{
   list-style: none;
   border-radius: 3px;
   padding: 15px 10px;
   cursor: pointer;
 }
-.result-box ul li:hover{
+.result-box ul li:hover, .descr ul li:hover{
   background: #e7e5e59f;
 }
-.result-box{
+.result-box, .descr{
   background: #ffffff;
   max-height: 300px;
   overflow-y: scroll;
