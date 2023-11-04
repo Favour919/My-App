@@ -11,8 +11,8 @@ let sideBar = `
                         <img src="img/avatar.svg" alt="">
                     </div>
                     <div class="user-details">
-                        <p class="name">AC</p>
-                        <p>xyz@gmail.com</p>
+                        <p class="username"></p>
+                        <p class="email"></p>
                     </div>
                 </div>
                 

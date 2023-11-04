@@ -10,52 +10,23 @@
 //     document.querySelector('table tbody').appendChild(tr);
 // });
 
-let autocomplete = [
-	'john',
-	'good',
-	'paul'
-]
 
 let token = localStorage.getItem("token");
+let userId = localStorage.getItem("userID");
 
-fetch('https://redemptionfm.com/outpatient/get_symptoms', {
-		method: 'GET',
+let url = 'https://redemptionfm.com/outpatient/get_patient?userID=' + userId
+fetch(url, {
+	method: 'GET',
 		headers: {
 			'API-Key': `${token}`,
-		},
-	}).then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
-const resultBox = document.querySelector(".result-box");
-const inputBox = document.getElementById("input-box");
-
-inputBox.onkeyup = function () {
-	let result = [];
-	let input = inputBox.value;
-	if (input.length) {
-		result = autocomplete.filter((keyword) => {
-			return keyword.toLowerCase().includes(input.toLowerCase());
-		});
-		console.log(result);
-		display(result);
-
-		if (!result.length) {
-			resultBox.innerHTML = '';
-		}
-	}
-}
-
-function display(result) {
-	const content = result.map((list) => {
-		return "<li onclick=selectInput(this)>" + list + "</li>"
-	});
-
-	resultBox.innerHTML = "<ul>"+ content.join('') +"</ul>"
-}
-
-function selectInput(list) {
-	inputBox.value = list.innerHTML;
-	resultBox.innerHTML = '';
-}
-
+	},
+		}).then(response => response.json())
+	.then(response => {
+		document.querySelector('#height').textContent = response.height + 'cm';
+		document.querySelector('#weight').textContent = response.weight + 'kg';
+		document.querySelector('#gender').textContent = response.gender;
+		document.querySelector('.username').textContent = response.username.charAt(0).toUpperCase() + response.username.slice(1);
+		document.querySelector('.email').textContent = response.email;
+		document.querySelector('#username').textContent = 'Hi ' + response.username.charAt(0).toUpperCase() + response.username.slice(1);
+	  }
+	  ).catch(err => console.error(err));

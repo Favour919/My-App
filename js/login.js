@@ -19,13 +19,13 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
-const form = document.getElementById('Form');
+const loginForm = document.getElementById('Form');
 
-form.addEventListener('submit', async event => {
+loginForm.addEventListener('submit', async event => {
     event.preventDefault();
     
 
-  const data = new FormData(form);
+  const data = new FormData(loginForm);
 
   for (const pair of data.entries()) {
     let item = document.getElementById(`${pair[0]}`);
@@ -77,7 +77,8 @@ form.addEventListener('submit', async event => {
       }, 3000);
       let token = resData.token;
       localStorage.setItem('token', token)
-      
+      let userId = resData.userID
+      localStorage.setItem('userID', userId)
       window.location.href = 'dashboard.html';
       
     }

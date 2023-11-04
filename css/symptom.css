@@ -189,3 +189,16 @@ img{
   max-height: 300px;
   overflow-y: scroll;
 }
+.error {
+    background-color: #f8d3d3;
+    border-bottom: 2px solid #990202;
+    color: #990202;
+	display: block;
+  }
+
+  .success {
+	background-color: #dcf3dc;
+	border: 1px solid green;
+	color: green;
+	display: block;
+  }
