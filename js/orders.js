@@ -144,7 +144,7 @@ symptomForm.addEventListener('submit', async event => {
 	let userId = localStorage.getItem("userID");
 	
 	let payload = {
-		patientID: patientId,
+		patientID: userId,
         symptomID: level2,
         severityLevel: level,
         notesComments: data.get('descr')
