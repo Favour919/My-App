@@ -1,14 +1,4 @@
-// Orders.forEach(order => {
-//     const tr = document.createElement('tr');
-//     const trContent = `
-//         <td>${order.productName}</td>
-//         <td>${order.paymentStatus}</td>
-//         <td class="${order.status === 'Severe' ? 'danger' : order.status === 'Moderate' ? 'warning' : 'primary'}">${order.status}</td>
-//         <td class="primary">Details</td>
-//     `;
-//     tr.innerHTML = trContent;
-//     document.querySelector('table tbody').appendChild(tr);
-// });
+
 
 
 let token = localStorage.getItem("token");
@@ -29,4 +19,37 @@ fetch(url, {
 		document.querySelector('.email').textContent = response.email;
 		document.querySelector('#username').textContent = 'Hi ' + response.username.charAt(0).toUpperCase() + response.username.slice(1);
 	  }
-	  ).catch(err => console.error(err));
+).catch(err => console.error(err));
+	  
+let symptomUrl = 'https://redemptionfm.com/outpatient/get_user_symptoms?userID=' + userId;
+fetch(symptomUrl, {
+	method: 'GET',
+		headers: {
+			'API-Key': `${token}`,
+	},
+		}).then(response => response.json())
+	.then(response => {
+		response.forEach(order => {
+    const tr = document.createElement('tr');
+    const trContent = `
+        <td>${order.symptomName}</td>
+        <td>${order.description}</td>
+        <td>${order.numOfTimesTracked}</td>
+        <td>${order.lastDateTracked}</td>
+        <td class="${order.averageSeverityLevel === 'Severe' ? 'danger' : order.averageSeverityLevel === 'Moderate' ? 'warning' : 'primary'}">${order.averageSeverityLevel}</td>
+        <td class="primary">Details</td>
+    `;
+    tr.innerHTML = trContent;
+    document.querySelector('table tbody').appendChild(tr);
+});
+	  }
+).catch(err => console.error(err));
+
+let logout = document.querySelector('#logout');
+logout.addEventListener('click', function () {
+	localStorage.removeItem("token");
+	localStorage.removeItem("userID");
+	localStorage.removeItem("patientID");
+	window.location.href = "login.html";
+
+ })

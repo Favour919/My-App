@@ -51,11 +51,10 @@ profileForm.addEventListener('submit', async event => {
          body: payload,
        },
       );
-      console.log(payload);
+      
 
      const resData = await res.json();
 
-     console.log(resData);
      let alert = document.querySelector('.alert');
      if (resData.error) {
        alert.textContent = resData.error;
@@ -72,7 +71,8 @@ profileForm.addEventListener('submit', async event => {
          alert.classList.remove('success')
        }, 3000);
        
-       
+       let patientId = resData.patientID
+       localStorage.setItem('patientID', patientId)
        window.location.href = 'dashboard.html';
       
      }

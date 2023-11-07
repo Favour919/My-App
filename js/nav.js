@@ -48,11 +48,11 @@ let nav = `
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" id="logout">
                         <span class="material-symbols-outlined">
                             logout
                         </span>
-                        <div class="title">logout</div>
+                        <div class="title" >logout</div>
                     </a>
                 </li>
             </ul>

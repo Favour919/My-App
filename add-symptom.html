@@ -36,6 +36,9 @@
             <div class="cards">
                 
                 <div class="content">
+                    <div class="alert-con">
+                        <div class="alert"></div>
+                    </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <h4 class="page-title">Track symptom</h4>
@@ -43,11 +46,11 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <form id="Form" method="post">
+                        <form id="symptom-form" method="post">
                             <div class="form-group">
                                 <div>
                                     <label>Symtom Name</label>
-                                    <input name="search" class="form-control" id="input-box" type="search" placeholder="Please search for symtoms" autocomplete="off">
+                                    <input name="search" class="form-control" id="search" type="search" placeholder="Please search for symtoms" autocomplete="off">
                                 </div>
                                 <div class="result-box">
                                     
@@ -56,17 +59,15 @@
 
 							<div class="form-group">
 								<label>Severity Level</label>
-								<select class="form-control select" id="gender" name="gender">
-									<option>Mild</option>
-									<option>Moderate</option>
-                                    <option>Severe</option>
+								<select class="form-control select" id="severity" name="severity">
+									
 								</select>
 							</div>
                                 
                             <div class="form-group">
                                 <div>
                                     <label>Symtom Description</label>
-                                    <textarea name="descr" id="input-boxs" cols="30" rows="6" class="form-control" autocomplete="off"></textarea>
+                                    <textarea name="descr" id="descr" cols="30" rows="6" class="form-control" autocomplete="off"></textarea>
                                 </div>
                                 <div class="descr">
                                     
