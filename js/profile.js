@@ -19,7 +19,8 @@ profileForm.addEventListener('submit', async event => {
     }
     }
     let userId = localStorage.getItem("userID");
-    let payload = {
+  let payload = {
+        userID: userId,
         firstName: data.get('firstName'),
         lastName: data.get('lastName'),
         dateOfBirth: data.get('dateOfBirth'),
@@ -30,7 +31,6 @@ profileForm.addEventListener('submit', async event => {
         weight: data.get('weight'),
         emergencyContactName: data.get('emergencyContactName'),
         emergencyContactPhone: data.get('emergencyContactPhone'),
-        userID: userId
     };
   
     payload = JSON.stringify(payload);
