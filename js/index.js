@@ -52,4 +52,14 @@ logout.addEventListener('click', function () {
 	localStorage.removeItem("patientID");
 	window.location.href = "login.html";
 
- })
+});
+let addAssessment = document.querySelector('.assessment');
+addAssessment.addEventListener('click', function () {
+	window.location.href = "add-symptom.html";
+
+});
+let trackSymptom = document.querySelector('.track');
+trackSymptom.addEventListener('click', function () {
+	window.location.href = "track-symptom.html";
+
+});
