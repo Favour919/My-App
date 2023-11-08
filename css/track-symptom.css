@@ -304,9 +304,6 @@ table tbody tr:last-child td{
     .cards{
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: 
-        "card1 card1"
-        "card3 card4"
-        "card2 card2"
         "card6 card6"
         "card5 card5"
       ;
@@ -316,16 +313,9 @@ table tbody tr:last-child td{
     .cards{
       grid-template-columns: 1fr;
       grid-template-areas: 
-        "card1"
-        "card3"
-        "card4"
-        "card2"
         "card6"
         "card5"
       ;
-    }
-    .chart-box{
-      display: none;
     }
 }
 
